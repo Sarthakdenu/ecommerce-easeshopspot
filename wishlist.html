@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+    <link rel="stylesheet" href="accountdetails.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nova+Square&family=Oswald&family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wishlist.css">
+</head>
+<body>
+    <div id="heading" >
+        <h1>Wishlist Items</h1>
+    </div>
+    <div class="container" id="items">
+        <ul id="wishlistItems"></ul>
+    </div>
+
+    <script>
+        function removeFromWishlist(index) {
+            const wishlistItems = JSON.parse(localStorage.getItem('wishlist')) || [];
+            wishlistItems.splice(index, 1);
+            localStorage.setItem('wishlist', JSON.stringify(wishlistItems));
+            displayWishlist();
+        }
+
+        function displayWishlist() {
+            const wishlistItems = JSON.parse(localStorage.getItem('wishlist')) || [];
+            const wishlistContainer = document.getElementById('wishlistItems');
+            
+            wishlistContainer.innerHTML = '';
+
+            wishlistItems.forEach((item, index) => {
+                const listItem = document.createElement('li');
+                
+              
+                const imgElement = document.createElement('img');
+                imgElement.src = item.imageUrl;
+                imgElement.alt = 'Wishlist Item Image';
+                listItem.appendChild(imgElement);
+
+              
+                listItem.innerHTML += `<p>${item.category} - ${item.itemName}</p>`;
+
+           
+                const removeFromWishlistButton = document.createElement('button');
+                removeFromWishlistButton.type = 'button';
+                removeFromWishlistButton.className = 'btn btn-warning';
+                removeFromWishlistButton.textContent = 'Remove from Wishlist';
+                removeFromWishlistButton.onclick = () => removeFromWishlist(index);
+                listItem.appendChild(removeFromWishlistButton);
+
+               
+                const addToCartButton = document.createElement('button');
+                addToCartButton.type = 'button';
+                addToCartButton.className = 'btn btn-success';
+                addToCartButton.textContent = 'Add to Cart';
+               
+                listItem.appendChild(addToCartButton);
+
+               
+                const buyNowButton = document.createElement('button');
+                buyNowButton.type = 'button';
+                buyNowButton.className = 'btn btn-primary';
+                buyNowButton.textContent = 'Buy Now';
+              
+                listItem.appendChild(buyNowButton);
+
+                wishlistContainer.appendChild(listItem);
+            });
+        }
+
+        
+        displayWishlist();
+    </script>
+</body>
+</html>

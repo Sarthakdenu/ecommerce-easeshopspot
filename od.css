@@ -1,0 +1,113 @@
+body
+{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-seri;
+    padding-top: 40px;
+}
+#heading
+{
+   text-align: center;
+    color: white;
+    background-color: orangered;
+    font-size: 40px;
+    border: 2px solid gold;
+}
+#address
+{
+    padding-top: 20px;
+    background-color: rgb(237, 235, 234);
+    font-size: 15px;
+    border: 2px solid gold;
+    font-size: 18px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#address button
+{
+    background-color: rgb(130, 126, 126);
+    color: white;
+}
+#pricesdetailsing
+{
+    background-color: azure;
+    border: 2px solid gold;
+    padding-left: 30px;
+    background-color: azure;
+   
+}
+#productdetails img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid gold;
+    height: 180px;
+    width: 180px;
+    padding-left: 30px;
+    
+}
+#secrutiy
+{
+    background-color: rgb(234, 231, 231);border: 2px solid gold;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+#pricesdetails
+{
+    background-color: azure;
+    border: 2px solid gold;
+    padding-left: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dropdown button
+{
+    width: 180px;
+}
+#continue button
+{
+    width: 1250px;
+    height: 50px;
+}
+#continue button a
+{
+    text-decoration: none;
+    color: black;
+}
+#continue
+{
+    padding: 0px;
+}
+#addeditem img
+{
+  height: 180px;
+  width: 180px;
+  
+}
+#addeditem
+{
+    padding-top: 30px;
+    
+}
+#addeditem p{
+    font-size: 20px;
+}
+#additem li{
+    text-decoration: none;
+    display: none;
+}

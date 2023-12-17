@@ -1,0 +1,132 @@
+body
+{  background: url(Screenshot\ 2023-12-03\ 195344.png) 0 0 no-repeat ;
+    background-size: cover;
+    margin: 0px;
+    border: 0px;
+}
+body::before
+{
+    content: "";
+    background-image: inherit;
+    filter: blur(15px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+#mainr
+{
+   
+    border: 2px solid black;
+    height: 500px;
+}
+#main
+{
+    padding-top: 80px;
+    width: 60%;
+    height: 80%;
+    padding-bottom: 100px;
+
+}
+.btnnn
+{
+    padding-top: 20px;
+  
+}
+#sigin 
+{
+    border: 2px solid black;
+  background-color:rgba(0, 0, 0, 0.663);
+}
+#sigin img{
+    padding-left: 0px;
+    clip-path: circle(32.5%);
+}
+#sigin button
+{
+  display: block;
+  width: 250px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 30px;
+
+}
+#b1
+{
+    background-color: rgba(0, 72, 255, 0.686);
+}
+#b2
+{
+    background-color: rgb(255, 51, 0);
+}
+#b3
+{
+    background-color: rgba(7, 249, 136, 0.27);
+}
+.form-group
+{
+    padding-top: 30px;
+
+}
+#loginblock h1,p,a
+{
+    text-align: center;
+}
+#loginblock p
+{
+    font-size: 20px;
+    padding-top: 20px;
+}
+#loginblock
+{
+    border: 2px solid black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, rgb(20, 21, 21), rgb(53, 52, 52), rgb(32, 32, 31));
+   
+}
+#loginblock h1{
+    padding-top: 30px;
+}
+#loginblock a
+{
+    text-decoration: none;
+}
+#loginblock label
+{
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif
+}
+#loginblock button
+{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    width: 580px;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+}
+.from-check
+{
+    padding-top: 30px;
+    display: inline-block;
+}
+#loginblock input[type="email"] {
+    width: 100%; 
+    max-width: 680px;
+  }
+
+  #loginblock input[type="password"] {
+    width: 100%; 
+    max-width: 680px; 
+  }
+
+
+  

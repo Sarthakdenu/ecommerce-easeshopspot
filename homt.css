@@ -1,0 +1,545 @@
+body
+{
+    margin: 0px;
+    border: 0px;
+    background-color: #111111ef;
+    background: url(bbbb.jpg) ;
+    background-color: #111111ef;
+}
+.taskbar
+{
+    background-color: cyan;
+}
+#taskbar {
+   padding-top: 3px;
+}
+#categorybar
+{
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+#company-name
+{
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-seri;
+    padding-top: 7px;
+}
+#options
+{
+    display: inline-block;
+    align-items: right;
+    padding-left: 50px;
+}
+#options a
+{
+    font-size: 25px;
+    padding-top: 10px;
+    padding: 20px 20px 20px 20px;
+    padding-top: 30px;
+    border: 2px solid cyan;
+    color: black;
+}
+
+#loginbutton button
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Poppins', sans-seri;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 180px;
+
+}
+#loginbutton button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-seri;
+    font-size: 20px;
+}
+.features
+{
+    display: inline-block;
+    background-color: rgb(34, 30, 30);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+}
+.features a
+{
+  padding: 20px 20px 20px 20px;
+  font-family: 'Poppins', sans-seri;
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+
+}
+.features a:hover{
+    color: yellow;
+}
+
+#banner{
+    background: url(bg4.webp) no-repeat 0 0;
+    background-size: cover;
+ }
+ .banner-tittle{
+    padding-top: 5rem;
+ }
+ .banner-tittle h1{
+    font-style: bolder;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+ }
+.banner-tittle p.lead{
+    color: #fff;
+   
+}
+
+
+
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.banner-title {
+    overflow: hidden;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: gold;
+}
+
+.lead {
+    display: inline-block;
+    color: white;
+}
+
+.lead span {
+    display: inline-block;
+    animation: popIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite forwards;
+    transform-origin: 50% 50%;
+}
+.buttonclass button
+{
+    color: black;
+    background-color:gold;
+    font-family: 'Poppins', sans-serif;
+}
+#banner {
+    height: 580px;
+    background-size: cover;
+    background-position: center;
+    animation: changeImage 9s infinite; 
+}
+
+@keyframes changeImage {
+    0%, 100% {
+        background-image: url('tv.jpg');
+    }
+    25% {
+        background-image: url('dresss.jpg');
+    }
+    50% {
+        background-image: url('final.jpg');
+    }
+    75%
+    {
+        background-image: url('bg4.webp');
+    }
+}
+
+
+.items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
+}
+
+.items > div {
+    flex: 0 0 20%; 
+    margin: 0 10px; 
+    text-align: center;
+    padding: 20px;
+    color: black;
+    border: 3px solid cyan;
+    border-radius: 30px;
+    background-color: white;
+    width: 20px;
+  
+}
+.items > div:hover
+{
+    background: linear-gradient(to right, rgb(0, 221, 255), rgb(255, 2, 2), rgb(246, 255, 0), rgb(100, 255, 80));
+    color: white;
+    
+}
+.items h3 {
+    margin-bottom: 10px;
+   
+}
+
+.items i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: cyan;
+}
+
+.items p {
+    font-size: 14px;
+    color: #555;
+    display: none;
+}
+#specialoffers{
+    background: url(specialoffer.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+#secondheading
+{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+.card-body p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.card-body button
+{
+    display: block;
+    width: 250px;
+    background-color: gold;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.card-body
+{
+    border-radius: 10px;
+    border: 1px solid black; 
+    background-color: #fff4f4;
+    
+}
+#imging,#hh img,#ff img ,#ll img,#dd img
+{
+    height: 230px;
+    width: 250px;
+    border-radius: 50px;
+}
+
+#disclaimer
+{
+    align-items: center;
+    justify-content: center;
+}
+#dd,#ll,#ff,#hh
+{
+    border-radius: 40px;
+    padding: 20px 20px 20px 20px;
+}  
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    100%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+  }
+
+  #secondheading {
+    animation: slideIn 4s ease-out infinite;
+    
+  }
+  #contact{
+    position: relative;
+   }
+   #contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(bbbb.jpg) no-repeat center center/cover;
+   }
+   #contact-box{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+   }
+   #contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    background-color: rgb(29, 29, 29);
+   }
+   #contact-box textarea{
+   width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    background-color: rgb(29, 29, 29);
+   }
+   
+   #contact p{
+    padding-top: 30px;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+   }
+   #contact-box form{
+    width: 40%;
+   }
+   #contact-box label{
+    font-size: 1.3rem;
+   }
+   #contact h1,#client-section h1{
+    font-family: 'Pacifico', cursive;
+   }
+
+   #footer-sidebar{
+    color: white;
+    background-color: #34495e;
+    padding: 20px o;
+
+}
+.footer-widget h4:after{
+    content: "";
+    background-color: white;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+}
+.latest-news li{
+    margin-bottom: 3px;
+}
+#footer{
+    color: white;
+    background-color: black;
+    padding: 10px 0;
+}
+
+
+.slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px; border: 10px solid cyan;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .slider img{
+    height: 600px;
+    width: 1000px;
+    clip-path: circle(80%);
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .left-arrow {
+    color: white;
+    left: 10px;
+  }
+
+  .right-arrow {
+    color: white;
+    right: 10px;
+  }
+  .offers h1
+  {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-top: 20px;
+    font-size: 45px;
+    
+  }
+  .price-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    padding-top: 15px;
+    font-size: 15px;
+  }
+
+  #menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  #menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  #menu a:hover {
+    color: #f1f1f1;
+  }
+
+  #menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .close-btn  a
+  {
+    display: block;
+       border: 1px solid white;
+       color: white;
+       font-family: 'Poppins', sans-serif;
+  }
+
+  .salesheading
+  {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 50px;
+    padding-left: 135px;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid cyan;
+    color: white;
+  }
+  .salesimages img
+  {
+    width:780px ;
+    height: 300px;
+   
+  }
+  .salesimages 
+  {
+    border: 5px solid rgb(195, 255, 0);
+  }
+  .salescontainer
+  {
+    padding-bottom: 20px;
+    border: 3px solid cyan;
+  }
+
+  #menswear
+  {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #menswear button
+  {
+    display: block;
+    width: 250px;
+    background-color: gold;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+  }
+  #menswear p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  #menswear img
+  {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    border: 2px solid cyan;
+  }
+  
+  #menswear .hello
+  {
+    border: 2px solid cyan;
+  }

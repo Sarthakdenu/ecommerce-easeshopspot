@@ -1,0 +1,46 @@
+body
+{
+    margin: 0;
+    border: 0;
+    background: url(bbbb.jpg) ;
+}
+#heading
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: cyan;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid white;
+}
+#items img{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    border: 2px solid cyan;
+    
+}
+#items button
+{
+    display: block;
+    width: 250px;
+    background-color: gold;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+#items p
+{
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+#wishlistItems li
+{
+    padding: 30px 30px 30px 3px;
+    border: 2px solid gold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
